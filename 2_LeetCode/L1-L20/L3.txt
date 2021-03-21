@@ -1,0 +1,21 @@
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+		if (s.length()==0) return 0;
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        int max = 0;
+        int left = 0;
+        for(int i = 0; i < s.length(); i ++){
+            if(map.containsKey(s.charAt(i))){
+				//置左端
+                left = Math.max(left,map.get(s.charAt(i)) + 1);
+            }
+            map.put(s.charAt(i),i);
+            max = Math.max(max,i-left+1);
+        }
+        return max;
+    }
+}
+
+滑动窗口，hashmap，
+第一次听到滑动窗口的概念，进入窗口，判断左端在哪，确定最长值。
+hashmap,key不可以相同，但是value可以相同。

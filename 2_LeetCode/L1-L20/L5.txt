@@ -1,0 +1,34 @@
+class Solution {
+    boolean isP(String str){
+		if(str.length()==0) {
+			return false;
+		}
+		for(int i =0;i<=str.length()/2;i++) {
+			if(str.charAt(i)!=str.charAt(str.length()-i-1)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+    public String longestPalindrome(String s) {
+            int max=0;
+		    String maxs="";
+            for(int i =0;i<=s.length();i++) {
+                for(int j=i+1;j<=s.length();j++) {
+                    String test = s.substring(i,j);
+					//substring是i到j的字符串，这边历遍所有情况
+                    //只要字符串满足，是回文，长度比原本的长，就可以替换
+                    if(isP(test) && test.length()>max) {
+                        maxs=test;
+                        max=Math.max(max,maxs.length());
+                    }
+                }
+                
+            }
+            return maxs;
+		
+
+    }
+}
+暴力破解法，
