@@ -1,0 +1,13 @@
+﻿http://localhost:8089/interface-ui/#/
+需要完成的
+location ADD
+activity ADD
+report add
+时间（12：00）的选择
+日期的选择
+
+
+ip	rm-2ze0qi3i3z0is39zceo.mysql.rds.aliyuncs.com
+port	3306
+username	mysqlroot
+password	Itstimetomove!
