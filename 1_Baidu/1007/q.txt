@@ -1,0 +1,20 @@
+Description
+班级组织出游，男生和女生的人数相同，将所有人排成一个有序的队列，根据该队列进行分组，每个小组的男女生人数相同，且男女生都是组合在一起的，问能有多少种分组情况。男生用1表示，女生用0表示。
+
+Format
+INPUT
+string "00110011"
+OUTPUT
+int 6
+Samples
+SAMPLE INPUT
+00110011
+SAMPLE OUTPUT
+6
+Restrictions
+Time Limit: 1000 ms
+
+Memory Limit: 65535 KB
+
+Hint
+重复出现的小组也要算他们的次数。如："00110011"里面有6种分组：“0011”，“01”，“1100”，“10”，“0011” 和 “01”。

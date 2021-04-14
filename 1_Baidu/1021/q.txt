@@ -1,0 +1,26 @@
+Description
+度度熊和朋友在玩一个游戏： 给定一个数n，将数n拆成m个数（要求m个数的和等于n）：num1 num2...，其中m>1, m<=n，请问num1 num2...这m个数的最大乘积是多少？
+
+例如：
+
+n等于5，m可以等于2，此时2个数分别为：2 3，得到最大乘积为6。（此处两个数也可以取1和4，但是乘积为4，不是最大的）
+
+n等于9，m可以等于3，此时3个数分别为：3 3 3，得到最大乘积为27。
+
+Format
+INPUT
+n
+OUTPUT
+maxProduct
+Samples
+SAMPLE INPUT
+5
+SAMPLE OUTPUT
+6
+Restrictions
+Time Limit: 1000 ms
+
+Memory Limit: 65535 KB
+
+Hint
+动态规划
