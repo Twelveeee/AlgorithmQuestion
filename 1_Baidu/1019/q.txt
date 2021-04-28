@@ -1,0 +1,21 @@
+Description
+小度正在学习线性代数，学到矩阵的时候感觉很有兴趣，他想按照从外向里以顺时针的顺序依次打印矩阵的每个元素。例如，如果输入如下2*2的矩阵： 1 2 3 4，输出的是1 2 4 3。输入矩阵最小尺寸是为1x1。
+
+Format
+INPUT
+row col num1 num2 num3...
+OUTPUT
+res1 res2 res3...
+Samples
+SAMPLE INPUT
+2 2
+1 2 3 4
+SAMPLE OUTPUT
+1 2 4 3
+Restrictions
+Time Limit: 1000 ms
+
+Memory Limit: 65535 KB
+
+Hint
+画图观察打印的顺序
